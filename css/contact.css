@@ -1,0 +1,98 @@
+.contact-left h3 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 21px 0 0 50px;
+}
+
+.contact-left {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/contactPage/bg.webp');
+}
+
+.contact-left p {
+    margin: 12px 0 0 50px;
+    font-size: 15px;
+}
+
+.contact-right {
+    margin-top: 20px;
+    border: 2px solid #dcdcdc;
+    border-radius: 30px;
+    background-color: #e9e7e734;
+}
+
+.contact-right p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 27px;
+}
+
+
+.inputSet {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    background-color: #e9e7e7;
+}
+
+
+textarea {
+    border: 2px solid #000;
+    height: 160px;
+
+}
+
+.formSize {
+    margin-left: 15px;
+}
+
+.sendBtn {
+    position: relative;
+    width: 22%;
+    height: 12%;
+    left: 0;
+    right: 0;
+    margin: 22px 0 13px 40%;
+    border: 2px solid #383838;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+.sendBtn:hover {
+    background-color: #383838;
+    color: #fff;
+}
+
+.a {
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.ab {
+    margin-top: 20px;
+    border: 1px solid #9b9b9b;
+    border-radius: 20px;
+}
+
+.comeusInfo {
+    border-right: 1px dotted #0000001c;
+}
+
+.comeusInfo p,
+h6 {
+    font-size: 15px;
+    margin-top: -7px;
+}
+
+.address {
+    margin-top: -15px;
+}
+
+.address2 p {
+    margin-top: -9px;
+}
+
+.address p {
+    margin-top: 4px;
+}

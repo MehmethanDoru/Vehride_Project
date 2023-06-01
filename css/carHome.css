@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body,
+html {
+    background: #e9e7e7;
+    font-family: 'Roboto Slab', serif;
+}
+
+#topOfPage {
+    /* background-color: #00A5C6; */
+    /* background-image: url(../back.svg); */
+    background-color: #e9e7e7;
+    color: #e9e7e7;
+}
+
+.bg-body-tertiary {
+    background: #e9e7e7;
+
+}
+
+.navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+}
+
+.sign {
+    border: 1.5px solid #000;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:993px) {
+    .sign {
+        border: none;
+    }
+}
+
+button.sent {
+    background-color: #00A5C6;
+}
+
+.sent:hover {
+    box-shadow: 3px 3px 13px #00a5c656, -3px -3px 13px #00a5c656;
+}
+
+.form-control:focus {
+    border-color: #8e8d8d;
+    box-shadow: none;
+    box-shadow: 3px 3px 8px #00a5c656;
+}
+
+.bgc-home {
+    background-image: url('../images/car/top.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-weight: bold;
+}
+
+.short-rental {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.formCenter {
+    border: 3px solid #000;
+    width: 430px;
+    border-radius: 45px;
+    background-color: #9194963d;
+    box-shadow: -8px 8px 18px 6px rgba(0, 0, 0, 0.79);
+}
+
+.btn-container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.city select {
+    padding: 3px 0;
+    padding-right: 130px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.city-container,
+.brand-container,
+.model-container,
+.date-container,
+.btn-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.date input {
+    padding: 3px 0;
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.currentGeoBtn:hover::after {
+    content: 'current';
+}
+
+.brand select {
+    padding: 3px 0;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin-right: 8px;
+}
+
+.model select {
+    padding: 3px 0;
+    padding-right: 48px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.brand-model {
+    display: flex;
+    justify-content: center;
+}
+
+option {
+    align-items: center;
+}
+
+.btnShort {
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin-top: 17px;
+    padding: 1px 4px;
+    background-color: #fff;
+}
+
+.rightPanel {
+    position: relative;
+    animation-name: fade-in;
+    animation-duration: 2450ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    background-image: url(../images/icons/animated.svg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.rightPanel h2 {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 95%;
+    font-style: italic;
+}
+
+.rightPanel h2 a {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+.rightPanel h2 a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    border: none;
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateY(-18%);
+        opacity: 0;
+        filter: blur(1px);
+    }
+
+    50% {
+        filter: blur(0.5px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        filter: none;
+    }
+}
+
+.about {
+    border-top: 1px dotted #383737;
+    border-bottom: 1px dotted #383737;
+    background-color: #9194963d;
+}
+
+.review-card {
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0efef;
+    width: 80%;
+    border-radius: 10%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .review-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .reviewer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .reviewer-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+  
+  .review-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .review-date {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .col-lg-4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width:767px){
+    .rightPanel h2 {
+        position: static;
+    }
+
+    .rightPanel {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .review-card {
+        border-radius: 7%;
+    }
+  }
+

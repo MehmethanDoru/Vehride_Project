@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.color {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* Safari desteği */
+    padding: 2px 3px;
+  }
+  
+body, html {
+    /* background: #e9e7e7; */
+    background-image: url('../back.svg');
+    font-family: 'Roboto Slab', serif;
+    /* margin-bottom: -50px; */
+}
+
+.navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+}
+
+.sign {
+    border: 1.5px solid #000;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:991px) {
+    .sign {
+        border: none;
+    }
+}
+
+button.sent {
+    background-color: #00A5C6;
+}
+
+.sent:hover {
+    box-shadow: 3px 3px 13px #00a5c656, -3px -3px 13px #00a5c656;
+}
+
+.form-control:focus {
+    border-color: #8e8d8d;
+    box-shadow: none;
+    box-shadow: 3px 3px 8px #00a5c656;
+}   

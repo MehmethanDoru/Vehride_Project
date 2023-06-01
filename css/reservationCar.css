@@ -1,0 +1,310 @@
+#rentInfo {
+    border: 3px solid #7b7b7b8a;
+    transition: border-color 0.7s ease;
+}
+
+#carImg {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 200px;
+}
+
+.carInfo {
+    margin-top: 20px;
+}
+
+#rentInfo {
+    display: grid;
+    place-items: center;
+    /* align-self: center; */
+    text-align: center;
+    border-radius: 100%;
+}
+
+.rentInfo {
+    margin-top: 50px;
+}
+
+.acceptRent button {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 7px;
+    border-radius: 30px;
+    margin-top: -80%;
+}
+
+.acceptRent button:hover {
+    background-color: #262626;
+    color: #fff;
+}
+
+
+
+.step2Form input,
+.step2Form select,
+.step2Form textarea {
+    max-width: 100%;
+    min-width: 155px;
+}
+
+#btnConfirmDiv {
+    position: relative;
+}
+
+#rezConfirm {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 7px;
+    border-radius: 30px;
+    margin-top: 7px;
+    position: absolute;
+    left: auto;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+#rezConfirm:hover {
+    border: 1px dashed #fff;
+    border-radius: 50px;
+    transform: scale(1.12);
+    background-color: #262626;
+    color: #fff;
+}
+
+#choice h4 {
+    text-align: center;
+    position: relative;
+    color: #2a2a2a86;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 25px;
+    font-style: oblique;
+    font-weight: 600;
+    animation-name: fade-in;
+    animation-duration: 2450ms;
+    animation-fill-mode: forwards;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #2a2a2a86;
+}
+
+@keyframes fade-in {
+    from {
+        /* transform: translateY(-18%); */
+        opacity: 0;
+    }
+
+    to {
+        /* transform: translateY(0); */
+        opacity: 1;
+    }
+}
+
+
+.rezQuery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rezQuery {
+    padding: 3px 0;
+    padding-left: 7px;
+    width: 20%;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin-left: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .rentInfo {
+        margin-top: 12px;
+
+    }
+
+    .acceptRent button {
+        margin-top: 5px;
+    }
+
+    #rentInfo {
+        border-radius: 0;
+        max-width: 60%;
+        margin: auto;
+        border: none;
+        border-top: 3px solid #7b7b7b8a;
+    }
+
+    #carImg {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        min-height: 200px;
+        max-height: 400px;
+    }
+
+    #choice {
+        display: none;
+    }
+
+    #rezQuery {
+        width: 50%;
+    }
+}
+
+.table-responsive {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 5px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #9e9a9a;
+    border-radius: 25px;
+    border: 2px solid #f5f5f5;
+}
+
+/* For choose new car start */
+.leftPanel {
+    position: relative;
+    animation-name: fade-in;
+    animation-duration: 1200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    /* background-image: url(../images/icons/animated.svg); */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.leftPanel h2 {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 95%;
+    font-style: italic;
+}
+
+.leftPanel h2 a {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+.leftPanel h2 a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    border: none;
+}
+
+.short-rental {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.formCenter {
+    border: 3px solid #000;
+    width: 430px;
+    border-radius: 45px;
+    background-color: #9194963d;
+    box-shadow: -8px 8px 18px 6px rgba(0, 0, 0, 0.79);
+}
+
+.btn-container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.city select {
+    padding: 3px 0;
+    padding-right: 130px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.city-container,
+.brand-container,
+.model-container,
+.date-container,
+.btn-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.date input {
+    padding: 3px 0;
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.currentGeoBtn:hover::after {
+    content: 'current';
+}
+
+.brand select {
+    padding: 3px 0;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin-right: 8px;
+}
+
+.model select {
+    padding: 3px 0;
+    padding-right: 48px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.brand-model {
+    display: flex;
+    justify-content: center;
+}
+
+option {
+    align-items: center;
+}
+
+.btnShort {
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin-top: 17px;
+    padding: 1px 4px;
+    background-color: #fff;
+}
+/* For choose new car end */
+

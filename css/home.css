@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    height: 100%;
+}
+
+.car {
+    border-right: 1px solid #fff;
+}
+
+.car, .motorcycle {
+    opacity: 0.3;
+    filter: grayscale(60%);
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+
+.car:hover, .motorcycle:hover {
+    opacity: 0.7;
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    opacity: 1;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 50px;
+    width: 37%;
+}
+
+.firstText {
+    color: #000000;
+    position: absolute;
+    top: 70%;
+    left: 23%;
+    opacity: 1;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 45px;
+    z-index: 2;
+}
+
+.secondText {
+    position: absolute;
+    top: 70%;
+    left: 66%;
+    color: #000000 ;
+    opacity: 1;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 45px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1015px) {
+    .secondText {
+        position: absolute;
+        top: 70%;
+        left: 64%;
+        color: #000000 ;
+        opacity: 1;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        font-size: 45px;
+        z-index: 2;
+    }
+}
+
+
+@media screen and (max-width: 790px) {
+    .car, .motorcycle {
+        float: none;
+        opacity: 0.3;
+        filter: grayscale(60%);
+        width: 100%;
+        height: 50%;
+        position: relative;
+        z-index: 1;
+        float: left ;
+    }
+
+    .car {
+        border-bottom: 1px solid #fff;
+    }
+
+    .title {
+        visibility: hidden;
+    }
+
+    .firstText {
+        color: #000000;
+        position: absolute;
+        transform: translate(-50%, -100%);
+        top: 28%;
+        left: 50%;
+        opacity: 1;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        font-size: 45px;
+        z-index: 2;
+    }
+     
+    .secondText {
+        position: absolute;
+        transform: translate(-50%, -100%);
+        top: 79%;
+        left: 49%;
+        color: #000000 ;
+        opacity: 1;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        font-size: 45px;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,18 @@
+.accoTitle {
+    border: 2px solid #2c2c2c;
+    border-radius: 10px;
+    background-color: #ebeaea;
+    text-align: center;
+    margin-top: 18px;
+}
+
+
+.accordion {
+    border: none;
+    background-color: #ebeaea;
+    padding: 0 30%;
+}
+
+.accordion p {
+    font-size: 15px;
+}

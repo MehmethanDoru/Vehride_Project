@@ -1,0 +1,13 @@
+.title {
+    /* margin-left: 8px; */
+    margin-bottom: 20px;
+    font-weight: 900;
+    
+    color: #656565
+}
+
+.brace {
+    border-bottom: 2px solid #aca8a8;
+    border-top: 2px solid #aca8a8;
+    margin: 0 17px 0 17px;
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+	font-family: 'Roboto Slab', serif;
+}
+
+body{
+	background-color: #e9e7e7;
+}
+.form {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 70%;
+	max-height: 90%;
+	background-color: #c2c2c2;
+	margin: auto;
+	position: absolute;
+	
+}
+.left-panel {
+	background: #000000;
+	height: 100%;
+	position: absolute;
+	float: left;
+}
+
+.leftImg {
+	/* position: relative; */
+	width: 100%;
+	height: 100%;
+	padding: auto;
+	filter: grayscale(60%);
+}  
+
+.right-panel {
+	background-color: #c2c2c2;
+	height: 100%;
+	position: absolute;
+	float: left;
+}
+
+.loginForm {
+	position: absolute;
+	background-color: #c2c2c2;
+	max-width: 90%;
+	max-height: 80%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.formSize {
+	max-width: 72%;
+	margin: auto;
+	border: none;
+}
+
+.inputSet {
+	border: none;  
+	border-radius: 0; 
+	border-bottom:1px solid #000
+}
+
+.loginButton {
+	position: absolute;
+	width: 30%;
+	height: 12%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border: 2px solid #000000;
+	background-color: transparent;
+	border-radius: 50px;
+}
+
+.loginButton:hover {
+	background-color: #000000;
+	color: #fff
+  }	
+
+.form-control:focus {
+    border-color: #8e8d8d;
+    box-shadow: none;
+}
+
+.bottom-text {
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+  }	
+
+
+@media screen and (max-width:900px) {
+	.left-panel, .leftImg {
+		display: none;
+	}
+}
+
+.returnHome {
+	position: absolute;
+	right: 0;
+	background: transparent;
+	font-size: 13px;
+}
