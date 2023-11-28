@@ -18,7 +18,7 @@ This site was my first site building experience covering both frontend and backe
   
 ## Demo
 
-[You can click for the demo](http://vehride.epizy.com/) (sites: vehride.epizy.com)
+[You can click for the demo](https://vehride.mehmethandoru.com/) (sites: https://vehride.mehmethandoru.com/)
 
   
 ## Features
